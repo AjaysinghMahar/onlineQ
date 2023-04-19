@@ -1,0 +1,23 @@
+.bg-img {
+  /* The image used */
+  background: url("/assets/images/background.jpg");
+  height: 100%;
+  /* Position the image in the top-left corner */
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-container {
+  width: 35rem;
+  margin: auto;
+  color: whitesmoke;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(11, 15, 13, 0.582);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  /* width: 35rem;
+  margin: auto;
+  color: whitesmoke; */
+}

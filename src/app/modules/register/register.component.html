@@ -1,0 +1,191 @@
+<body class="bg-primary">
+  <div id="layoutAuthentication">
+    <div id="layoutAuthentication_content">
+      <main>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <div class="card shadow-lg border-0 rounded-lg mt-5">
+                <div class="card-header">
+                  <h3 class="text-center font-weight-light my-4">
+                    Create Account
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3 mb-md-0">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter your first name"
+                          [(ngModel)]="signupmodel.firstName"
+                          value="Mark"
+                          name="firstName"
+                          required
+                        />
+                        <label for="firstName">First name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter your last name"
+                          [(ngModel)]="signupmodel.lastName"
+                          name="lastName"
+                        />
+                        <label for="lastName">Last name</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3 mb-md-0">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter Mobile Number"
+                          [(ngModel)]="signupmodel.mobileNumber"
+                          name="mobileNumber"
+                        />
+                        <label for="mobileNumber">Mobile Number</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="genderRadio"
+                            id="maleRadio"
+                            value="Male"
+                            [(ngModel)]="signupmodel.gender"
+                          />
+                          <label class="form-check-label" for="maleRadio">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="genderRadio"
+                            id="femaleRadio"
+                            value="Female"
+                            [(ngModel)]="signupmodel.gender"
+                          />
+                          <label class="form-check-label" for="femaleRadio">
+                            Female
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="genderRadio"
+                            id="otherRadio"
+                            value="Other"
+                            [(ngModel)]="signupmodel.gender"
+                          />
+                          <label class="form-check-label" for="otherRadio">
+                            Other
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="col-md-6">
+                      <div class="form-floating mb-3 mb-md-0">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter Gender"
+                          [(ngModel)]="signupmodel.gender"
+                          name="gender"
+                        />
+                        <label for="gender">Gender</label>
+                      </div>
+                    </div> -->
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="Enter Email"
+                      [(ngModel)]="signupmodel.email"
+                      name="email"
+                    />
+                    <label for="inputEmail">Email address</label>
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3 mb-md-0">
+                        <input
+                          class="form-control"
+                          type="password"
+                          placeholder="Enter  password"
+                          [(ngModel)]="signupmodel.password"
+                          name="password"
+                        />
+                        <label for="inputPassword">Password</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3 mb-md-0">
+                        <input
+                          class="form-control"
+                          type="password"
+                          placeholder="Enter Confirm password"
+                          [(ngModel)]="signupmodel.confirmpassword"
+                          name="confirmpassword"
+                        />
+                        <label for="inputPasswordConfirm"
+                          >Confirm Password</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <form (ngSubmit)="Submit(signupmodel)">
+                    <div class="mt-4 mb-0">
+                      <div class="d-grid">
+                        <button
+                          class="btn btn-primary btn-block"
+                          type="submit"
+                          href="/login"
+                        >
+                          Create Account
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer text-center py-3">
+                  <div class="small">
+                    <a href="/login">Have an account? Go to login</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div id="layoutAuthentication_footer">
+    <footer class="py-4 bg-light mt-auto">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between small">
+          <div class="text-muted">Copyright &copy; Your Website 2023</div>
+          <div>
+            <a href="#">Privacy Policy</a>
+            &middot;
+            <a href="#">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
